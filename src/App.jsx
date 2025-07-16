@@ -1,6 +1,4 @@
 import MatrixRain from "./components/MatrixRain";
-import Skills from './components/Skills';
-
 
 function App() {
   return (
