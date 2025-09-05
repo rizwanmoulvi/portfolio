@@ -1,23 +1,27 @@
-import MatrixRain from "./components/MatrixRain";
+import { motion } from 'framer-motion'
+import Hero from './components/Hero'
+import Projects from './components/Projects'
+import Skills from './components/Skills'
+import Achievements from './components/Achievements'
+import Contact from './components/Contact'
 
 function App() {
   return (
-    <div className="relative font-mono min-h-screen" style={{ color: "#0f0" }}>
-      <MatrixRain />
-      <div className="relative z-10 flex flex-col items-center justify-center h-screen text-center px-4">
-        <h1
-          className="text-5xl font-bold mb-4 animate-pulse"
-          style={{ color: "#0f0" }}
-        >
-          I AM RIZZ
-        </h1>
-        <p className="text-xl mb-6 ">
-          Crafting digital realities through code. Building systems that bridge
-          the gap between imagination and execution.
-        </p>
-      </div>
+    <div className="min-h-screen bg-white text-black">
+      <motion.main
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6 }}
+        className="container mx-auto px-6 py-8 max-w-4xl"
+      >
+        <Hero />
+        <Projects />
+        <Skills />
+        <Achievements />
+        <Contact />
+      </motion.main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
