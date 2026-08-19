@@ -3,9 +3,14 @@ import { Award, ExternalLink } from 'lucide-react'
 
 const achievements = [
   {
+    position: "3rd Place",
+    event: "TOKEN2049 Origins 2025",
+    link: "https://dorahacks.io/hackathon/ideahackers-guide-to-ibc/winner"
+  },
+  {
     position: "1st Place",
     event: "IBC Hackathon",
-    link: "https://dorahacks.io/hackathon/ideahackers-guide-to-ibc/winner"
+    link: "https://www.nasdaq.com/press-release/alphaton-capital-powers-token2049-origins-hackathon-singapore-2025-10-15#:~:text=3rd%20%E2%80%94%20TAAS%20(solo%20dev)%3A%C2%A0on%2Dchain%20rental%20%26%20lease%20agreements%C2%A0for%20real%20estate%20on%20TON%20testnet."
   },
   {
     position: "4th Place", 
